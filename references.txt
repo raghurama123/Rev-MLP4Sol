@@ -1,0 +1,185 @@
+MD17  |  ML archetecture  | Training datasets    | Data reference  | unit         
+----------------------------------------------------------------------------
+   1  |  SchNet           |  1000                |   [1]           | kcal/mol 
+   2  |  DimeNet          |  1000                |   [2]           | meV 
+   3  |  PhysNet          |  1000 (950/50)       |   [5]           | kcal/mol 
+   4  |  GemNet           |  1000 (950/50)       |   [4]           | kcal/mol 
+   5  |  PaiNN            |  1000 (950/50)       |   [5]           | kcal/mol 
+   6  |  ENINet           |  1000 (950/50)       |   [6]           | kcal/mol 
+   7  |  SpookyNet        |  1000                |   [7]           | kcal/mol 
+   8  |  NequIP           |  1000 (950/50)       |   [8]           | meV 
+   9  |  MACE             |  1000 (950/50)       |   [9]           | meV 
+  10  |  NewtonNet        |  1000 (950/50)       |   [10]          | kcal/mol 
+  11  |  Allegro          |  1000 (950/50)       |   [11]          | meV 
+  12  |  SO3krates        |  -                   |   [12]          | kcal/mol 
+  13  |  ACE              |  1000                |   [13]          | meV  
+  14  |  FCHL19           |  1000                |   [13]          | meV 
+  15  |  GAP(SOAP)        |  1000                |   [13]          | meV 
+  16  |  sGDML            |  1000                |   [13]          | meV    
+
+
+
+Reference [1]: SchNet  
+@article{schutt2018schnet,
+  title={Schnet--a deep learning architecture for molecules and materials},
+  author={Sch{\"u}tt, Kristof T and Sauceda, Huziel E and Kindermans, P-J and Tkatchenko, Alexandre and M{\"u}ller, K-R},
+  journal=jcp,
+  volume={148},
+  number={24},
+  year={2018},
+  url={https://doi.org/10.1063/1.5019779},
+  publisher={AIP Publishing}
+}
+
+Reference [2]: DimeNet 
+@article{gasteiger2020directional,
+  title={Directional message passing for molecular graphs},
+  author={Gasteiger, Johannes and Gro{\ss}, Janek and G{\"u}nnemann, Stephan},
+  journal={arXiv preprint arXiv:2003.03123},
+  url={https://doi.org/10.48550/arXiv.2003.03123},
+  year={2020}
+} 
+
+Reference [3]: PhysNet 
+@article{unke2019physnet,
+  title={PhysNet: A neural network for predicting energies, forces, dipole moments, and partial charges},
+  author={Unke, Oliver T and Meuwly, Markus},
+  journal=jctc,
+  volume={15},
+  number={6},
+  pages={3678--3693},
+  year={2019},
+  url={https://doi.org/10.1021/acs.jctc.9b00181},
+  publisher={ACS Publications}
+}
+
+
+Reference [4]: GemNet
+@inproceedings{gasteiger2021gemnet,
+  author = {Gasteiger, Johannes and Becker, Florian and G\"{u}nnemann, Stephan},
+  booktitle = {Advances in Neural Information Processing Systems},
+  editor = {M. Ranzato and A. Beygelzimer and Y. Dauphin and P.S. Liang and J. Wortman Vaughan},
+  pages = {6790--6802},
+  publisher = {Curran Associates, Inc.},
+  title = {GemNet: Universal Directional Graph Neural Networks for Molecules},
+  url = {https://proceedings.neurips.cc/paper_files/paper/2021/file/35cf8659cfcb13224cbd47863a34fc58-Paper.pdf},
+  volume = {34},
+  year = {2021}
+}  
+
+Reference [5]: PaiNN
+@inproceedings{schutt2021equivariant,
+  title={Equivariant message passing for the prediction of tensorial properties and molecular spectra},
+  author={Sch{\"u}tt, Kristof and Unke, Oliver and Gastegger, Michael},
+  booktitle={International Conference on Machine Learning},
+  pages={9377--9388},
+  year={2021},
+  url={https://proceedings.mlr.press/v139/schutt21a.html},
+  publisher={PMLR}
+}
+
+Reference [6]: ENINet
+@article{mao2024molecule,
+  title={Molecule Graph Networks with Many-body Equivariant Interactions},
+  author={Mao, Zetian and Hu, Chuan-Shen and Li, Jiawen and Liang, Chen and Das, Diptesh and Sumita, Masato and Xia, Kelin and Tsuda, Koji},
+  journal={arXiv preprint arXiv:2406.13265},
+  url={https://arxiv.org/abs/2406.13265},
+  year={2024}
+}
+
+
+Reference [7]: SpookyNet 
+@article{unke2021spookynet,
+  title={SpookyNet: Learning force fields with electronic degrees of freedom and nonlocal effects},
+  author={Unke, Oliver T and Chmiela, Stefan and Gastegger, Michael and Sch{\"u}tt, Kristof T and Sauceda, Huziel E and M{\"u}ller, Klaus-Robert},
+  journal=ncom,
+  volume={12},
+  number={1},
+  pages={7273},
+  year={2021},
+  url={https://doi.org/10.1038/s41467-021-27504-0},
+  publisher={Nature Publishing Group UK London}
+}
+
+Reference [8]: NequIP 
+@article{batzner20223,
+  title={E (3)-equivariant graph neural networks for data-efficient and accurate interatomic potentials},
+  author={Batzner, Simon and Musaelian, Albert and Sun, Lixin and Geiger, Mario and Mailoa, Jonathan P and Kornbluth, Mordechai and Molinari, Nicola and Smidt, Tess E and Kozinsky, Boris},
+  journal=ncom,
+  volume={13},
+  number={1},
+  pages={2453},
+  year={2022},
+  url={https://doi.org/10.1038/s41467-022-29939-5},
+  publisher={Nature Publishing Group UK London}
+}
+
+Reference [9]: MACE  
+@inproceedings{batatia2022mace,
+ author = {Batatia, Ilyes and Kovacs, David P and Simm, Gregor and Ortner, Christoph and Csanyi, Gabor},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {S. Koyejo and S. Mohamed and A. Agarwal and D. Belgrave and K. Cho and A. Oh},
+ pages = {11423--11436},
+ publisher = {Curran Associates, Inc.},
+ title = {MACE: Higher Order Equivariant Message Passing Neural Networks for Fast and Accurate Force Fields},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2022/file/4a36c3c51af11ed9f34615b81edb5bbc-Paper-Conference.pdf},
+ volume = {35},
+ year = {2022}
+}
+
+Reference [10]: NewtonNet 
+@article{haghighatlari2022newtonnet,
+  title={Newtonnet: A newtonian message passing network for deep learning of interatomic potentials and forces},
+  author={Haghighatlari, Mojtaba and Li, Jie and Guan, Xingyi and Zhang, Oufan and Das, Akshaya and Stein, Christopher J and Heidar-Zadeh, Farnaz and Liu, Meili and Head-Gordon, Martin and Bertels, Luke and others},
+  journal={Digital Discov.},
+  volume={1},
+  number={3},
+  pages={333--343},
+  year={2022},
+  url={https://doi.org/10.1039/D2DD00008C},
+  publisher={Royal Society of Chemistry}
+}
+
+Reference [11]: Allegro   
+@article{musaelian2023learning,
+  title={Learning local equivariant representations for large-scale atomistic dynamics},
+  author={Musaelian, Albert and Batzner, Simon and Johansson, Anders and Sun, Lixin and Owen, Cameron J and Kornbluth, Mordechai and Kozinsky, Boris},
+  journal=ncom,
+  volume={14},
+  number={1},
+  pages={579},
+  year={2023},
+  url={https://doi.org/10.1038/s41467-023-36329-y},
+  publisher={Nature Publishing Group UK London}
+}
+
+
+Reference [12]: SO3krates 
+@inproceedings{frank2022so3krates, 
+ author = {Frank, J. Thorben and Unke, Oliver T. and M\"{u}ller, Klaus-Robert}, 
+ title = {So3krates: Equivariant attention for interactions on arbitrary length-scales in molecular systems}, 
+ year = {2022}, 
+ isbn = {9781713871088}, 
+ publisher = {Curran Associates Inc.}, 
+ address = {Red Hook, NY, USA}, 
+ booktitle = {Proceedings of the 36th International Conference on Neural Information Processing Systems}, 
+ articleno = {2132}, 
+ numpages = {14}, 
+ url={https://doi.org/10.48550/arXiv.2205.14276},
+ location = {New Orleans, LA, USA}, series = {NIPS '22} 
+}
+
+    
+Reference [13]: ACE     
+@article{kovacs2021linear,
+  title={Linear atomic cluster expansion force fields for organic molecules: beyond rmse},
+  author={Kov{\'a}cs, D{\'a}vid P{\'e}ter and Oord, Cas van der and Kucera, Jiri and Allen, Alice EA and Cole, Daniel J and Ortner, Christoph and Cs{\'a}nyi, G{\'a}bor},
+  journal={Journal of chemical theory and computation},
+  volume={17},
+  number={12},
+  pages={7696--7711},
+  year={2021},
+  url={https://doi.org/10.1021/acs.jctc.1c00647},
+  publisher={ACS Publications}
+}  
+
