@@ -2,14 +2,14 @@ MD17  |  ML archetecture  | Training datasets    | Data reference  | unit
 ----------------------------------------------------------------------------
    1  |  SchNet           |  1000                |   [1]           | kcal/mol 
    2  |  DimeNet          |  1000                |   [2]           | meV 
-   3  |  PhysNet          |  1000 (950/50)       |   [5]           | kcal/mol 
+   3  |  PhysNet #         |  1000 (950/50)      |   [5]           | kcal/mol 
    4  |  GemNet           |  1000 (950/50)       |   [4]           | kcal/mol 
    5  |  PaiNN            |  1000 (950/50)       |   [5]           | kcal/mol 
    6  |  ENINet           |  1000 (950/50)       |   [6]           | kcal/mol 
    7  |  SpookyNet        |  1000                |   [7]           | kcal/mol 
    8  |  NequIP           |  1000 (950/50)       |   [8]           | meV 
    9  |  MACE             |  1000 (950/50)       |   [9]           | meV 
-  10  |  NewtonNet        |  1000 (950/50)       |   [10]          | kcal/mol 
+  10  |  NewtonNet *      |  1000 (950/50)       |   [10]          | kcal/mol 
   11  |  Allegro          |  1000 (950/50)       |   [11]          | meV 
   12  |  SO3krates        |  -                   |   [12]          | kcal/mol 
   13  |  ACE              |  1000                |   [13]          | meV  
@@ -18,6 +18,8 @@ MD17  |  ML archetecture  | Training datasets    | Data reference  | unit
   16  |  sGDML            |  1000                |   [13]          | meV    
 
 
+# In the original PhysNet paper, the training was done on 50k training data. The 1k training data, is taken from PaiNN paper. 
+* NewtonNET is it MD17 or rMD17? have 9 molecules.
 
 Reference [1]: SchNet  
 @article{schutt2018schnet,
