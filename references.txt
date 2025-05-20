@@ -1,25 +1,36 @@
-MD17  |  ML archetecture  | Training datasets    | Data reference  | unit         
+MD17 |  ML archetecture  | Training datasets    | Data reference  | unit         
 ----------------------------------------------------------------------------
-   1  |  SchNet           |  1000                |   [1]           | kcal/mol 
-   2  |  DimeNet          |  1000                |   [2]           | meV 
-   3  |  PhysNet #         |  1000 (950/50)      |   [5]           | kcal/mol 
-   4  |  GemNet           |  1000 (950/50)       |   [4]           | kcal/mol 
-   5  |  PaiNN            |  1000 (950/50)       |   [5]           | kcal/mol 
-   6  |  ENINet           |  1000 (950/50)       |   [6]           | kcal/mol 
-   7  |  SpookyNet        |  1000                |   [7]           | kcal/mol 
-   8  |  NequIP           |  1000 (950/50)       |   [8]           | meV 
-   9  |  MACE             |  1000 (950/50)       |   [9]           | meV 
-  10  |  NewtonNet *      |  1000 (950/50)       |   [10]          | kcal/mol 
-  11  |  Allegro          |  1000 (950/50)       |   [11]          | meV 
-  12  |  SO3krates        |  -                   |   [12]          | kcal/mol 
-  13  |  ACE              |  1000                |   [13]          | meV  
-  14  |  FCHL19           |  1000                |   [13]          | meV 
-  15  |  GAP(SOAP)        |  1000                |   [13]          | meV 
-  16  |  sGDML            |  1000                |   [13]          | meV    
+ 1   |  SchNet           |  1000                |   [1]           | kcal/mol 
+ 2   |  DimeNet          |  1000                |   [2]           | kcal/mol
+ 3   |  PhysNet          |  1000 (950/50)       |   [5] ###       | kcal/mol 
+ 4   |  GemNet           |  1000 (950/50)       |   [4]           | kcal/mol 
+ 5   |  PaiNN            |  1000 (950/50)       |   [5]           | kcal/mol 
+ 6   |  ENINet           |  1000 (950/50)       |   [6]           | kcal/mol 
+ 7   |  SpookyNet        |  1000                |   [7]           | kcal/mol 
+ 8   |  NequIP           |  1000 (950/50)       |   [8]           | meV 
+ 9   |  NewtonNet        |  1000 (950/50)       |   [10]          | kcal/mol 
+10   |  SO3krates        |  1000                |   [12]          | kcal/mol 
+11   |  sGDML            |                      |        ***      | kcal/mol      
+12   |  ViSNet           |  1000 (950/50)       |   [15]          | kcal/mol
 
 
-# In the original PhysNet paper, the training was done on 50k training data. The 1k training data, is taken from PaiNN paper. 
-* NewtonNET is it MD17 or rMD17? have 9 molecules.
+rMD17 |  ML archetecture  | Training datasets    | Data reference  | unit         
+---------------------------------------------------------------------------- 
+ 1    |  NequIP           |  1000 (950/50)       |   [8]           | meV 
+ 2    |  MACE             |  1000 (950/50)       |   [9]           | meV 
+ 3    |  Allegro          |  1000 (950/50)       |   [11]          | meV 
+ 4    |  ACE              |  1000 (950/50)       |   [13]          | meV  
+ 5    |  FCHL19           |                      |           $$$   | meV        
+ 6    |  GAP(SOAP)        |  1000 (950/50)       |   [13]          | meV 
+ 7    |  sGDML            |  1000 (950/50)       |   [13]          | meV    
+ 8    |  MGNN             |  1000 (950/50)       |   [14]          | meV    
+ 9    |  ViSNet           |  1000 (950/50)       |   [15]          | kcal/mol
+
+
+### In the original PhysNet paper, the training was done on 50k training data. The 1k training data, is taken from PaiNN paper. 
+*** 
+$$$ Ref 46 from ACE paper 
+
 
 Reference [1]: SchNet  
 @article{schutt2018schnet,
@@ -184,4 +195,30 @@ Reference [13]: ACE
   url={https://doi.org/10.1021/acs.jctc.1c00647},
   publisher={ACS Publications}
 }  
+
+Reference [14]: MGNN 
+@article{chang2025mgnn,
+  title={MGNN: Moment Graph Neural Network for Universal Molecular Potentials},
+  author={Chang, Jian and Zhu, Shuze},
+  journal={Npj Comput. Mater.},
+  volume={11},
+  number={1},
+  pages={55},
+  year={2025},
+  url={https://doi.org/10.1038/s41524-025-01541-5},
+  publisher={Nature Publishing Group UK London}
+}
+
+Reference [15]: ViSNet 
+@article{wang2024enhancing,
+  title={Enhancing geometric representations for molecules with equivariant vector-scalar interactive message passing},
+  author={Wang, Yusong and Wang, Tong and Li, Shaoning and He, Xinheng and Li, Mingyu and Wang, Zun and Zheng, Nanning and Shao, Bin and Liu, Tie-Yan},
+  journal=ncomm,
+  volume={15},
+  number={1},
+  pages={313},
+  year={2024},
+  url={https://doi.org/10.1038/s41467-023-43720-2},
+  publisher={Nature Publishing Group UK London}
+}
 
