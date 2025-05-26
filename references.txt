@@ -10,7 +10,7 @@ MD17 |  ML archetecture  | Training datasets    | Data reference  | unit
  8   |  NequIP           |  1000 (950/50)       |   [8]           | meV 
  9   |  NewtonNet        |  1000 (950/50)       |   [10]          | kcal/mol 
 10   |  SO3krates        |  1000                |   [12]          | kcal/mol 
-11   |  sGDML            |                      |        ***      | kcal/mol      
+11   |  sGDML            |  1000                |   [2] ***       | kcal/mol      
 12   |  ViSNet           |  1000 (950/50)       |   [15]          | kcal/mol
 
 
@@ -20,7 +20,7 @@ rMD17 |  ML archetecture  | Training datasets    | Data reference  | unit
  2    |  MACE             |  1000 (950/50)       |   [9]           | meV 
  3    |  Allegro          |  1000 (950/50)       |   [11]          | meV 
  4    |  ACE              |  1000 (950/50)       |   [13]          | meV  
- 5    |  FCHL19           |                      |           $$$   | meV        
+ 5    |  FCHL19           |  1000 (950/50)       |   [16],[13] $$$ | meV        
  6    |  GAP(SOAP)        |  1000 (950/50)       |   [13]          | meV 
  7    |  sGDML            |  1000 (950/50)       |   [13]          | meV    
  8    |  MGNN             |  1000 (950/50)       |   [14]          | meV    
@@ -28,8 +28,8 @@ rMD17 |  ML archetecture  | Training datasets    | Data reference  | unit
 
 
 ### In the original PhysNet paper, the training was done on 50k training data. The 1k training data, is taken from PaiNN paper. 
-*** 
-$$$ Ref 46 from ACE paper 
+*** The values are taken from the reference [2].
+$$$ The numerical values are taken from the reference [13].
 
 
 Reference [1]: SchNet  
@@ -222,3 +222,15 @@ Reference [15]: ViSNet
   publisher={Nature Publishing Group UK London}
 }
 
+Reference [16]: FCHL19 
+@article{christensen2020role,
+  title={On the role of gradients for machine learning of molecular energies and forces},
+  author={Christensen, Anders S and Von Lilienfeld, O Anatole},
+  journal={Machine Learning: Science and Technology},
+  volume={1},
+  number={4},
+  pages={045018},
+  year={2020},
+  url={https://doi.org/10.1088/2632-2153/abba6f},
+  publisher={IOP Publishing}
+}
